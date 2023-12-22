@@ -1,5 +1,5 @@
 <div class="container__small-card">
-  <a href="{{ link }}">
+  <a [routerLink]="['content', id]">
     <img src="{{ image }}" alt="{{ title }}" />
     <h3>{{ title }}</h3>
   </a>

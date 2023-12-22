@@ -8,7 +8,7 @@ import { IData } from 'src/interfaces/Data';
 })
 export class SmallCardComponent implements OnInit {
   @Input()
-  id: number = 0;
+  id: string = '0';
   @Input()
   image: string = '';
   @Input()

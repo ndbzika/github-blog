@@ -7,6 +7,7 @@ import { IData } from 'src/interfaces/Data';
   styleUrls: ['./big-card.component.scss'],
 })
 export class BigCardComponent implements OnInit {
+  id: number = 0;
   pic: string = '';
   title: string = '';
   description: string = '';
@@ -29,6 +30,7 @@ export class BigCardComponent implements OnInit {
     this.title = this.data.title;
     this.description = this.data.description;
     this.link = this.data.link;
+    this.id = this.data.id;
     console.log(this.data);
   }
 }
