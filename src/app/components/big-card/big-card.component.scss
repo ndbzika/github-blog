@@ -1,0 +1,30 @@
+.container__big-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8rem;
+  width: 42rem;
+
+  img {
+    width: 100%;
+    height: 45rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+  }
+
+  span {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: left;
+    width: 90%;
+  }
+}

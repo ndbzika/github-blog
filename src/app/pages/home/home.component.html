@@ -1,0 +1,23 @@
+<header>
+  <app-menu-bar></app-menu-bar>
+  <app-menu-title></app-menu-title>
+</header>
+<main>
+  <div class="container__home">
+    <div class="info__home">
+      <p>Stories, trends and insights from your friends at GitHub</p>
+      <p>Timestamp :: 1674098660</p>
+    </div>
+    <section class="card__section__home">
+      <app-big-card [data]="principalData"></app-big-card>
+      <div class="container__second__content">
+        <app-small-card
+          *ngFor="let item of secondaryData"
+          image="{{ item.image }}"
+          title="{{ item.title }}"
+          link="{{ item.link }}"
+        ></app-small-card>
+      </div>
+    </section>
+  </div>
+</main>

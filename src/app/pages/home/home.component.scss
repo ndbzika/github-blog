@@ -1,0 +1,44 @@
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+
+  .container__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .info__home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      p {
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+
+    .card__section__home {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 2rem;
+
+      .container__second__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        margin-top: -1%;
+      }
+    }
+  }
+}
